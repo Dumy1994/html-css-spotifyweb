@@ -55,8 +55,10 @@ header{
     z-index: 10000;
 }
 nav{
+    height: 90px;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-end;
     flex-flow: column nowrap;
     
@@ -89,8 +91,8 @@ aside div img{
 }
 /* 1 section  */
 .icon{
-    width: 50px;
-    height: 40px;
+    width: 40px;
+    height: 30px;
     padding: 10px;
     filter: invert(42%);
 }
@@ -99,8 +101,8 @@ div.icon-text:hover{
 }
 .icon-text{
     width: auto;
-    height: 40px;
-    line-height: 40px;
+    height: 30px;
+    line-height: 30px;
     padding: 5px;
     color: #717171;
 }
@@ -109,21 +111,64 @@ div.icon-text:hover{
 /* 2section */
 .section2{
     padding-top: 10px;
+    position: relative;
 }
 section.section2 h2{
     padding: 5px;
 }
 .plus{
-   font-size: 50px;
-    
+   width: 40px;
+   padding: 5px;
+    color: #717171;
 }
 .align{
-    line-height: 50px;
+    width: 100%;
+    line-height: 40px;
     display: inline-block;
+    color: #717171;
 }
 section.section2 ul li{
     padding: 5px;
     color: #717171;
+}
+/* /2 scetion  */
+/* 3 section  */
+
+.icon-download{
+    width: 20px;
+    display: inline-block;
+    color: #717171;
+}
+
+.installa{
+    position: absolute;
+    bottom: 150px;
+    left: 0;
+    padding: 5px;
+    
+}
+hr{
+    position: absolute;
+    bottom: 140px;
+    left: 15px;
+    width: 200px;
+    border:1px solid#717171 ;
+}
+.profile-icon{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 100px;
+    left: 5px;
+    background-color:#717171 ;
+    border-radius: 50%;
+    overflow-y: auto;
+
+}
+.name-profile{
+    position: absolute;
+    bottom: 105px;
+    left: 45px;
 }
 
 
