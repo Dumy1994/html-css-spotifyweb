@@ -42,6 +42,10 @@ a{
     align-items: flex-start;
 
 }
+h2{
+    padding: 10px ;
+    font-size: 1.3rem;
+}
 
 /* /general  */
 /* header  */
@@ -85,6 +89,8 @@ aside{
     width: 230px;
     height: 100vh;
     background-color: #000000;
+    overflow-y: hidden;
+    position: fixed;
 }
 aside div img{
     padding: 12px;
@@ -162,13 +168,54 @@ hr{
     left: 5px;
     background-color:#717171 ;
     border-radius: 50%;
-    overflow-y: auto;
+    overflow-y: hidden;
 
 }
 .name-profile{
     position: absolute;
     bottom: 105px;
     left: 45px;
+    
+}
+
+/* /aside  */
+/* main section 1  */
+
+main{
+    width: calc(100% - 230px);
+    height: 100vh;
+}
+ul{
+    list-style: none;
+}
+.ul-flex{
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    gap: 15px;
+    font-size: 0.6rem;
+    
+}
+.ul-flex li a{
+    color: #717171;
+}
+.ul-flex li a:hover{
+    color: white;
+}
+/* container  */
+.container{
+    position: absolute;
+    left: 230px;
+    top: 100px;
+}
+.img-music {
+    text-align: center;
+    width: calc(100% / 6);
+    padding: 30px;
+    font-size: 0.6rem;
+}
+.img-music img{
+    width: 100%;
 }
 
 
@@ -184,8 +231,6 @@ hr{
 
 
 
-
-/* /aside  */
 /* footer */
 footer{
     height: 90px;
