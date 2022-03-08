@@ -290,17 +290,81 @@ div.square-left div.flex-column i{
     color: #717171;
     padding: 5px;
 }
-div.square-left a{
 
-}
 
 /* center  */
 .center{
     width: 60%;
     height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;  
+}
+.change-song{
+    
+}
+.i-left i {
+    padding-left: 10px;
+    font-size: 1.5rem;
+}
+.i-right i{
+    padding-left: 10px;
+    font-size: 1.5rem;
+}
+.i-center a i{
+    margin: 0 30px;
+    font-size: 2rem;
+    width: 30px;
+    text-align: center;
+    
+}
+.i-center a i:hover{
+    transform: scale(1.5);
+    
+}
+
+.time-song{
+    height: 20px;
+    margin:0 30px;
+    color: white;
+}
+.grey-bar{
+    width: 350px;
+    margin-top: 8px;
+    position: relative;
+    border:2px solid #717171;
 }
 .square-right{
     width:20%;
     height: 100%;
 }
+.green-ghost{
+    width: 100px;
+    display: none;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    border:2px solid greenyellow;
+    
+}
+.white-ball{
+    width: 15px;
+    height: 15px;
+    margin-left: 100px;
+    background-color: white;
+    display: none;
+    border-radius: 50%;
+}
+.grey-bar:hover div.green-ghost{
+    display: block;
+}
+.grey-bar:hover .white-ball{
+    display: block;
+    position: absolute;
+    top: -7px;
+    left: -7px;
+}
+
+
 
