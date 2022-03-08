@@ -46,7 +46,12 @@ h2{
     padding: 10px ;
     font-size: 1.3rem;
 }
-
+h4{
+    color: #717171;
+}
+.padding{
+    padding-left: 30px;
+}
 /* /general  */
 /* header  */
 header{
@@ -213,11 +218,33 @@ ul{
     width: calc(100% / 6);
     padding: 30px;
     font-size: 0.6rem;
+    
 }
 .img-music img{
     width: 100%;
 }
-
+.box{
+width: 100%;
+position: relative;
+}
+/* main hover  */
+.block{
+    position: absolute;
+    left:0;
+    top: 30%;
+    width: 100%;
+    font-size: 3vw;
+    display: none;
+    color: rgba(255,255,255, 0.8);
+}
+.box:hover i{
+    display: block;
+    
+}
+/* main section 2 */
+.bottom-margin{
+   height: 50vh;
+}
 
 
 
