@@ -4,31 +4,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.clearfix::after{
-	content: '';
-	display: table;
-	clear:  both;
+    
 }
 body{
     background-color: #161824;
     color: white;
 }
-.debug{
-    border: 1px solid red;
-}
 a{
     color: white;
     text-decoration: none;
 }
-.float-left{
-    float: left;
-}
-.float-right{
-    float: right;
-}
-
 .flex{
     display: flex;
     flex-flow: row nowrap;
@@ -39,8 +24,6 @@ a{
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
-    align-content: center;
-
 }
 h2{
     padding: 10px ;
@@ -56,6 +39,18 @@ h4{
 .color-white{
     color: white;
 }
+.color-grey{
+    color: #717171;
+}
+a:hover{
+    color: white;
+}
+.color-black{
+    color: #000000;
+}
+.float-left{
+    float: left;
+}
 /* /general  */
 /* header  */
 header{
@@ -66,15 +61,15 @@ header{
     top: 0;
     right: 0;
     z-index: 10000;
+    
 }
 nav{
     height: 90px;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    flex-flow: column nowrap;
-    
+    flex-flow: row nowrap;
+    justify-content: end;
+    align-items: center;
 }
 .top{
     width: 250px;
@@ -100,6 +95,7 @@ aside{
     background-color: #000000;
     overflow-y: hidden;
     position: fixed;
+    
 }
 aside div img{
     padding: 12px;
@@ -132,9 +128,16 @@ section.section2 h2{
     padding: 5px;
 }
 .plus{
-   width: 40px;
-   padding: 5px;
-    color: #717171;
+   width: 30px;
+   height: 30px;
+   padding: 7px;
+   margin-left: 5px;
+   background-color: #717171;
+   margin-right: 10px;
+   color: black;
+}
+.plus:hover{
+    background-color: white;
 }
 .align{
     width: 100%;
@@ -142,48 +145,60 @@ section.section2 h2{
     display: inline-block;
     color: #717171;
 }
-section.section2 ul li{
+section.section2 ul li a{
     padding: 5px;
     color: #717171;
+}
+section.section2 ul li a:hover{
+    color: white;
 }
 /* /2 scetion  */
 /* 3 section  */
-
-.icon-download{
-    width: 20px;
-    display: inline-block;
-    color: #717171;
-}
-
 .installa{
-    position: absolute;
-    bottom: 150px;
-    left: 0;
+    background-color: #000000;
     padding: 5px;
     
 }
-hr{
+.installa div a{
     position: absolute;
     bottom: 140px;
-    left: 15px;
+    left: 40px;
+    color: #717171;
+}
+.installa div a:hover{
+    color: white;
+}
+.icon-download svg{
+    width: 20px;
+    height: 20px;
+    filter: invert(42%);
+    position: absolute;
+    bottom: 140px;
+    left: 10px;
+}
+hr{
     width: 200px;
     border:1px solid#717171 ;
-}
-.profile-icon{
-    width: 30px;
-    height: 30px;
     position: absolute;
-    bottom: 100px;
-    left: 5px;
+    bottom: 130px;
+    left: 10px;
+}
+.profile-icon svg{
+    width: 20px;
+    height: 20px;
     background-color:#717171 ;
     border-radius: 50%;
     overflow-y: hidden;
+    position: absolute;
+    bottom: 100px;
+    left: 10px;
 
 }
 .name-profile{
     position: absolute;
-    bottom: 105px;
-    left: 45px;
+    bottom: 100px;
+    left: 40px;
+    font-weight: bolder;
     
 }
 
@@ -290,6 +305,9 @@ div.square-left div.flex-column i{
     color: #717171;
     padding: 5px;
 }
+div.square-left div.flex-column i:hover{
+    color: white;
+}
 
 
 /* center  */
@@ -335,7 +353,13 @@ div.square-left div.flex-column i{
     position: relative;
     border:2px solid #717171;
 }
-
+.grey-light{
+    position: absolute;
+    width: 100px;
+    top: -2px;
+    left: -2px;
+    border:2px solid lightgray;
+}
 .green-ghost{
     width: 100px;
     display: none;
@@ -379,7 +403,13 @@ div.square-left div.flex-column i{
     position: relative;
     border:2px solid #717171;
 }
-
+.grey-light2{
+    width: 20px;
+    border:2px solid lightgrey;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+}
 .green-ghost2{
     width: 20px;
     display: none;
@@ -389,6 +419,7 @@ div.square-left div.flex-column i{
     border:2px solid greenyellow;
     
 }
+
 .white-ball2{
     width: 15px;
     height: 15px;
