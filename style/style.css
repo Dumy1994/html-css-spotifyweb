@@ -335,10 +335,7 @@ div.square-left div.flex-column i{
     position: relative;
     border:2px solid #717171;
 }
-.square-right{
-    width:20%;
-    height: 100%;
-}
+
 .green-ghost{
     width: 100px;
     display: none;
@@ -365,6 +362,49 @@ div.square-left div.flex-column i{
     top: -7px;
     left: -7px;
 }
+ 
+/* right footer  */
+.square-right{
+    width:20%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.grey-bar2{
+    width: 120px;
+    margin-top: 8px;
+    position: relative;
+    border:2px solid #717171;
+}
 
+.green-ghost2{
+    width: 20px;
+    display: none;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    border:2px solid greenyellow;
+    
+}
+.white-ball2{
+    width: 15px;
+    height: 15px;
+    margin-left: 20px;
+    background-color: white;
+    display: none;
+    border-radius: 50%;
+}
+.grey-bar2:hover div.green-ghost2{
+    display: block;
+}
+.grey-bar2:hover .white-ball2{
+    display: block;
+    position: absolute;
+    top: -7px;
+    left: -7px;
+}
 
 
