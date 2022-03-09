@@ -92,26 +92,30 @@ nav{
 /* aside  */
 aside{
     width: 230px;
-    height: 100vh;
+    height: 100%;
     background-color: #000000;
     overflow-y: hidden;
     position: fixed;
     
+}
+.aside-container{
+    width: 100%;
+    height: calc(100% -90px);
 }
 aside div img{
     padding: 12px;
 }
 /* 1 section  */
 .icon{
-    width: 40px;
+    width: 30px;
     height: 30px;
-    padding: 10px;
+    padding: 5px;
     filter: invert(42%);
 }
-div.icon-text:hover{
+div.icon-text h3 a:hover{
     color: white;
 }
-.icon-text{
+.icon-text h3 a{
     width: auto;
     height: 30px;
     line-height: 30px;
@@ -123,7 +127,7 @@ div.icon-text:hover{
 /* 2section */
 .section2{
     padding-top: 10px;
-    position: relative;
+   
 }
 section.section2 h2{
     padding: 5px;
@@ -153,36 +157,17 @@ section.section2 ul li a{
 section.section2 ul li a:hover{
     color: white;
 }
+.playlist{
+    width: 230px;
+    height: 150px;
+    overflow-y: auto;
+}
 /* /2 scetion  */
 /* 3 section  */
-.installa{
-    background-color: #000000;
-    padding: 5px;
-    
-}
-.installa div a{
-    position: absolute;
-    bottom: 140px;
-    left: 40px;
-    color: #717171;
-}
-.installa div a:hover{
-    color: white;
-}
 .icon-download svg{
     width: 20px;
     height: 20px;
     filter: invert(42%);
-    position: absolute;
-    bottom: 140px;
-    left: 10px;
-}
-hr{
-    width: 200px;
-    border:1px solid#717171 ;
-    position: absolute;
-    bottom: 130px;
-    left: 10px;
 }
 .profile-icon svg{
     width: 20px;
@@ -190,16 +175,23 @@ hr{
     background-color:#717171 ;
     border-radius: 50%;
     overflow-y: hidden;
-    position: absolute;
-    bottom: 100px;
-    left: 10px;
-
 }
-.name-profile{
-    position: absolute;
-    bottom: 100px;
-    left: 40px;
-    font-weight: bolder;
+.installa{
+    background-color: #000000;
+    padding: 5px;
+    width: 100%;
+    height: calc(100% - 505px);
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.installa div a:hover{
+    color: white;
+}
+hr{
+    width: 210px;
+    border:1px solid#717171 ;
+    margin: 10px auto;
     
 }
 
@@ -229,7 +221,7 @@ ul{
     position: absolute;
     left: 230px;
     top: 100px;
-    bottom: 90px;
+    bottom: 0;
     overflow-y: auto;
 }
 .img-music {
@@ -349,20 +341,20 @@ div.square-left div.flex-column i:hover{
     color: white;
 }
 .grey-bar{
-    width: 350px;
+    width: 20vw;
     margin-top: 8px;
     position: relative;
     border:2px solid #717171;
 }
 .grey-light{
     position: absolute;
-    width: 100px;
+    width: 5vw;
     top: -2px;
     left: -2px;
     border:2px solid lightgray;
 }
 .green-ghost{
-    width: 100px;
+    width: 5vw;
     display: none;
     position: absolute;
     top: -2px;
@@ -373,7 +365,7 @@ div.square-left div.flex-column i:hover{
 .white-ball{
     width: 15px;
     height: 15px;
-    margin-left: 100px;
+    margin-left: 5vw;
     background-color: white;
     display: none;
     border-radius: 50%;
@@ -399,20 +391,20 @@ div.square-left div.flex-column i:hover{
     gap: 10px;
 }
 .grey-bar2{
-    width: 120px;
+    width: 10vw;
     margin-top: 8px;
     position: relative;
     border:2px solid #717171;
 }
 .grey-light2{
-    width: 20px;
+    width: 5vw;
     border:2px solid lightgrey;
     position: absolute;
     top: -2px;
     left: -2px;
 }
 .green-ghost2{
-    width: 20px;
+    width: 5vw;
     display: none;
     position: absolute;
     top: -2px;
@@ -424,7 +416,7 @@ div.square-left div.flex-column i:hover{
 .white-ball2{
     width: 15px;
     height: 15px;
-    margin-left: 20px;
+    margin-left: 5vw;
     background-color: white;
     display: none;
     border-radius: 50%;
