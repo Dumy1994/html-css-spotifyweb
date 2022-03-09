@@ -34,6 +34,9 @@
     .play-song :last-child {
         font-size: 0.8rem;
     }
+    .square-right{
+        margin-left: -10px;
+    }
 }
 /* media 768 */
 @media screen and (max-width:768px)
@@ -71,10 +74,16 @@
     .play-song :last-child {
         font-size: 0.9rem;
     }
-/* media 576 */
+    .square-right{
+        margin-left: -10px;
+    }
 /* media 768 */
+/* media 576 */
 @media screen and (max-width:576px)
 { 
+    body{
+        min-width: 475px;
+    }
     .ul-flex{
         display: flex;
         justify-content: center;
@@ -134,7 +143,38 @@
     }
     header{
         width: calc(100% - 40px);
-
+    }
+    .icon-download a svg {
+        width: 35px;
+        height: 35px;
+        margin-left: -5px;
         
     }
+    .profile-icon a svg{
+        width: 30px;
+        height: 30px;
+        
+    }
+    .installa{
+        width: 100%;
+        height: 60%;
+    }
+    section.installa div.flex a.color-grey{
+        display: none;
+    }
+    section.installa hr{
+        display: none;
+    }
+    section.installa  span a.padding{
+        display: none;
+    }
+    div.square-right i{
+        padding: 2px;
+        
+    }
+    div.square-right{
+        margin-left: -10px;
+    }
+    
+
 }

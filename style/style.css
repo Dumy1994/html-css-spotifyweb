@@ -54,24 +54,7 @@ a:hover{
 }
 /* /general  */
 /* header  */
-header{
-    background-color:rgba(0,0,0,0.3);
-    height: 90px;
-    width: calc(100% - 230px);
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 100;
-    
-}
-nav{
-    height: 90px;
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: end;
-    align-items: center;
-}
+
 .top{
     width: 250px;
     height: 40px;
@@ -100,7 +83,7 @@ aside{
 }
 .aside-container{
     width: 100%;
-    height: calc(100% -90px);
+    height: 100%;
 }
 aside div img{
     padding: 12px;
@@ -112,6 +95,7 @@ aside div img{
     padding: 5px;
     filter: invert(42%);
 }
+
 div.icon-text h3 a:hover{
     color: white;
 }
@@ -158,10 +142,17 @@ section.section2 ul li a:hover{
     color: white;
 }
 .playlist{
-    width: 230px;
-    height: 150px;
-    overflow-y: none;
+    width: auto;
+    height: 180px;
+    max-width: 40vw;
+    overflow-y: auto;
+    
 }
+ul.playlist li {
+    margin-top: 5px;
+    
+}
+
 /* /2 scetion  */
 /* 3 section  */
 .icon-download svg{
@@ -208,6 +199,7 @@ ul{
     flex-flow: row wrap;
     gap: 15px;
     font-size: 0.8rem;
+    margin-top: 90px;
     
 }
 .ul-flex li a{
@@ -217,12 +209,42 @@ ul{
     color: white;
 }
 /* container  */
+.nav{
+    width: calc(100% - 230px);
+    height: 90px;
+    background-color:rgba(0,0,0,0.3);
+    position: fixed;
+    z-index: 100;
+
+}
+.upgrade{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
+    align-items: center;
+    margin-right: 40px;
+}
+.border-upgrade{
+    width: 250px;
+    height: 40px;
+    border:1px solid white;
+    text-align: center;
+    border-radius: 50px;
+    padding: 10px;
+    margin-right: 40px;
+    
+}
+.nav:hover{
+    transform: scale(1.05);
+}
 .container{
     position: absolute;
     left: 230px;
-    top: 100px;
+    top: 0;
     bottom: 0;
-    overflow-y: auto;
+    overflow: auto;
 }
 .img-music {
     text-align: center;
@@ -388,7 +410,6 @@ div.square-left div.flex-column i:hover{
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    gap: 10px;
 }
 .grey-bar2{
     width: 10vw;
@@ -429,6 +450,9 @@ div.square-left div.flex-column i:hover{
     position: absolute;
     top: -7px;
     left: -7px;
+}
+div.square-right i{
+    padding: 5px;
 }
 
 
