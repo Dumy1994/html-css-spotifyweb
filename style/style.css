@@ -68,7 +68,7 @@ nav{
     height: 90px;
     width: 100%;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: end;
     align-items: center;
 }
@@ -160,7 +160,7 @@ section.section2 ul li a:hover{
 .playlist{
     width: 230px;
     height: 150px;
-    overflow-y: auto;
+    overflow-y: none;
 }
 /* /2 scetion  */
 /* 3 section  */
@@ -205,9 +205,9 @@ ul{
 .ul-flex{
     display: flex;
     justify-content: center;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     gap: 15px;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     
 }
 .ul-flex li a{
@@ -291,7 +291,7 @@ div.square-left img{
     object-fit: contain;  
 }
 .play-song :last-child:hover{
-    color: aliceblue;
+    color: white;
     text-decoration: underline;
 }
 div.square-left div.flex-column i{

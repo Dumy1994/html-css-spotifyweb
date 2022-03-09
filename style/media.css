@@ -1,0 +1,140 @@
+/* media 992px */
+@media screen and (max-width:992px)
+{ 
+    .ul-flex{
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        gap: 10px;
+        font-size: 1.2rem;
+    }
+    .ul-flex li a {
+        color: white;
+    }
+    
+    .img-music {
+        text-align: center;
+        width: calc(100% / 4);
+        padding: 30px;
+        font-size: 0.6rem;
+    }
+    .flex{
+        flex-flow: row wrap;
+    }
+   .square-left :last-child {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+    }
+    div.square-left div.flex-column a i{
+        color: white;
+    }
+    .play-song :last-child {
+        font-size: 0.8rem;
+    }
+}
+/* media 768 */
+@media screen and (max-width:768px)
+{ 
+    .ul-flex{
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        gap: 10px;
+        font-size: 1.2rem;
+    }
+    .ul-flex li a {
+        color: #717171;
+    }
+    
+    .img-music {
+        text-align: center;
+        width: calc(100% / 2);
+        padding: 30px;
+        font-size: 0.6rem;
+    }
+    .flex{
+        flex-flow: row wrap;
+    }
+   .square-left :last-child {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+    }
+    div.square-left div.flex-column a i{
+        color: #717171;
+    }
+    .play-song :last-child {
+        font-size: 0.9rem;
+    }
+/* media 576 */
+/* media 768 */
+@media screen and (max-width:576px)
+{ 
+    .ul-flex{
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+    .ul-flex li a {
+        color: white;
+    }
+    
+    .img-music {
+        text-align: center;
+        width: calc(100% / 2);
+        padding: 30px;
+        font-size: 0.6rem;
+    }
+    .flex{
+        flex-flow: row wrap;
+    }
+   .square-left :last-child {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+    }
+    div.square-left div.flex-column a i{
+        color: #717171;
+    }
+    .play-song :last-child {
+        font-size: 0.5rem;
+    }
+    aside{
+        width: 40px;
+        height: 100%;
+        background-color: #000000;
+        overflow-y: hidden;
+        position: fixed;
+        
+    }
+    .section2, .icon-text{
+        display: none;
+       
+    }
+    aside div img{
+        width: 125px;
+        object-fit: cover;
+        margin-left: -5px;
+    }
+    .icon{
+        width: 45px;
+        height: 45px;
+    }
+    .container{
+        left: 40px;
+    }
+    header{
+        width: calc(100% - 40px);
+
+        
+    }
+}
