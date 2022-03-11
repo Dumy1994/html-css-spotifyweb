@@ -182,7 +182,7 @@ hr{
 /* main section 1  */
 header{
     width: calc(100% - 230px);
-    height: 60px;
+    height: 80px;
     position: fixed;
     top: 0;
     right: 0;
