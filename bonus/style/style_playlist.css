@@ -182,12 +182,12 @@ hr{
 /* main section 1  */
 header{
     width: calc(100% - 230px);
-    height: 60px;
+    height: 40vh;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 1000;
-    background-color: #282729;
+    background-color: #2E2E2E;
 }
 .muovi{
     width: 40px;
@@ -254,177 +254,76 @@ header{
     margin: auto;
     display: none;
 }
-/* container  */
-.container{
-    margin-top: 80px;
-}
-.buonasera{
-    width: 90%;
-    margin: 20px auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-   
-}
-.buonasera-sx{
-    width: calc((100% / 3) - 30px);
-    background-color: #462D3D;
-    border-radius: 10px;
-    display: flex;
-    flex-flow: row;
-    justify-content: flex-start;
-    align-items: center;
-    position: relative;
-}
-.buonasera-centro{
-    width: calc((100% / 3) - 30px);
-    background-color: #462D3D;
-    border-radius: 10px;
-    display: flex;
-    flex-flow: row;
-    justify-content: flex-start;
-    align-items: center;
-    position: relative;
-}
-.buonasera-dx{
-    width: calc((100% / 3) - 30px);
-    background-color: #462D3D;
-    border-radius: 10px;
-    display: flex;
-    flex-flow: row;
-    justify-content: flex-start;
-    align-items: center;
-    position: relative;
-}
-.buonasera img{
-    width: 100px;
-    height: 100%;
-    object-fit: contain;
-    margin-right: 20px;
-}
-.block-buonasera{
+.icon-playlist{
+    height: 200px;
+    width: 200px;
     position: absolute;
-    right: 15px;
-    bottom: 15px;
-    width: 50px;
-    height: 50px;
-    background-color: #1CD760;
-    font-size: 1.5rem;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 50px;
-    color: black;
-    display: none;
-}
-.buonasera-sx:hover .block-buonasera{
-    display: block;
-    animation-name: example;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in-out;
-}
-.buonasera-sx:hover, .buonasera-dx:hover:hover, .buonasera-centro:hover{
-background-color:#594452 ;
-}
-.buonasera-centro:hover .block-buonasera{
-    display: block;
-    animation-name: example;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in-out;
-}
-.buonasera-dx:hover .block-buonasera{
-    display: block;
-    animation-name: example;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in-out;
-}
-
-.nav{
-    width: calc(100% - 230px);
-    height: 90px;
-    background-color:rgba(0,0,0,0.3);
-    position: fixed;
-    z-index: 100;
-
-}
-.upgrade{
-    height: 90px;
-    width: 100%;
+    bottom: 20px;
+    left: 20px;
+    background-color: #282828;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: end;
-    align-items: center;
-    margin-right: 40px;
+    justify-content: center;
 }
-.border-upgrade{
-    width: 250px;
+.icon-playlist i{
+    width: auto;
+    height: 20vh;
+    line-height: 200px;
+    font-size: 8rem;
+}
+.mia-playlist{
+    position: absolute;
+    position: absolute;
+    bottom: 20px;
+    left: 250px;
+}
+.mia-playlist h1{
+    font-size: 4rem;
+}
+.mia-playlist h4, .mia-playlist a h4{
+    
+    color: white;
+    margin: 5px 0;
+}
+
+/* section  */
+.main-paylist{
+    position: relative;
+    top: 45vh;
+    left: 250px;
+    width: 100%;
+}
+.main-paylist i{
+    font-size: 2rem;
+    color: #353535;
+}
+.main-paylist i:hover{
+    color: white;
+}
+.main-paylist hr{
+    width: 100%;
+
+}
+.cerca{
+    background-color: #2D2D2D;
+    border: 0;
+    width: 300px;
     height: 40px;
-    border:1px solid white;
-    text-align: center;
-    border-radius: 50px;
-    padding: 10px;
-    margin-right: 40px;
+    font-size: 1.1rem;
+}
+
+.lente i{
+    font-size: 1rem;
+    color: #d8d8d8;
+    line-height: 40px;
+}
+.lente{
+    position: absolute;
+    left: 300px;
+    height: 40px;
+    width: 40px;
+    background-color: #2D2D2D;
     
 }
-
-.container{
-    position: absolute;
-    left: 230px;
-    top: 0;
-    bottom: 0;
-    overflow: auto;
-}
-.img-music {
-    text-align: center;
-    width: calc((100% / 6) - 10px);
-    padding: 15px;
-    margin: 10px;
-    font-size: 0.6rem;
-    background-color: #171717;
-    height: 30vh;
-    overflow: auto;
-}
-
-.img-music img{
-    width: 100%;
-    object-fit: contain;
-   
-}
-.box{
-width: 100%;
-position: relative;
-}
-/* main hover  */
-.block{
-    position: absolute;
-    right: 15px;
-    bottom: 15px;
-    width: 50px;
-    height: 50px;
-    background-color: #1CD760;
-    font-size: 1.5rem;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 50px;
-    display: none;
-    color: black;
-}
-.img-music:hover{
-    background-color: #232323;
-}
-.border-upgrade:hover{
-    transform: scale(1.05);
-}
-.img-music:hover .block{
-    display: block;
-    animation-name: example;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in-out;
-}
-/* main section 2 */
-.bottom-margin{
-   height: 50vh;
-}
-
 
 /* footer */
 footer{
